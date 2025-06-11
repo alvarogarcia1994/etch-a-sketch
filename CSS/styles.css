@@ -1,0 +1,112 @@
+html {
+  text-align: center;
+  font-family: Monaco, Courier, monospace;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  display: inline-block;
+}
+
+.square {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.color {
+  background-color: gray;
+  border: 1px solid black;
+}
+
+#rightpanel{
+  width:800px;
+  float:left;
+}
+
+#etchmachine{
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 800px;
+  height: auto;
+  padding-bottom:30px;
+  background-color:#d32f2f;
+  border-radius:1em;
+  box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+}
+
+#etchmachine p{
+  text-align:center;
+  font-size:1.5em;
+  margin: 0 0;
+  margin-bottom: 5px;
+  padding: 0.5em 0;
+  color:#ffff99;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  -moz-text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  color:#ffcc00;
+  -o-text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+
+}
+
+
+#grid {
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  background-color:#E8E8E8;
+  box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
+
+}
+
+.square {
+  background-color: #E8E8E8;
+  opacity: 1;
+  display: inline-block;
+}
+
+/* The #nobs ID is used to contain the left and right knobs of the etch-a-sketch machine */
+#nobs{
+  position:relative;
+  height:50px;
+}
+#rightnob{
+  background-color:#fff;
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  position:absolute;
+  right:20px;
+  box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+}
+
+#leftnob{
+  background-color:#fff;
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  position:absolute;
+  left:20px;
+  box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 600px) {
+  #rightnob {
+    right: 10px;
+  }
+
+  #leftnob {
+    left: 10px;
+  }
+}
