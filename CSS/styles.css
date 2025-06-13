@@ -1,35 +1,52 @@
 html {
   text-align: center;
-  font-family: Monaco, Courier, monospace;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.right {
-  float: right;
+.page{
+  margin-top: 20px;
 }
 
-.left {
-  display: inline-block;
+#quantity{
+  border-radius: 5px;
 }
 
+.grid-size{
+  border-radius: 5px;
+}
+
+.reset{
+  border-radius: 5px;
+}
+
+.rainbow-toggle{
+  border-radius: 5px;
+}
+
+.draw{
+  border-radius: 5px;
+}
+
+/* Styles for each square of the grid */
 .square {
   background-color: white;
   border: 1px solid black;
+  opacity: 1;
 }
 
+/* Standard colors styles*/
 .color {
   background-color: gray;
   border: 1px solid black;
 }
 
-#rightpanel{
-  width:800px;
-  float:left;
-}
-
+/* Styles for Etch-A-Sketch machine */
 #etchmachine{
   margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
   margin-left: 50px;
-  width: 800px;
+  width: 1200px;
   height: auto;
   padding-bottom:30px;
   background-color:#d32f2f;
@@ -48,26 +65,16 @@ html {
   -moz-text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
   color:#ffcc00;
   -o-text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
-
 }
 
-
+/* Grid styles */
 #grid {
+  display: grid;
   margin: 0 auto;
-  width: 600px;
-  height: 400px;
-  background-color:#E8E8E8;
-  box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
-  -moz-box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
-  -webkit-box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
-  -o-box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
-
-}
-
-.square {
   background-color: #E8E8E8;
-  opacity: 1;
-  display: inline-block;
+  box-shadow: 0px -3px 5px rgba(0,0,0,0.6);
+  width: 900px;
+  height: 900px;
 }
 
 /* The #nobs ID is used to contain the left and right knobs of the etch-a-sketch machine */
@@ -75,6 +82,7 @@ html {
   position:relative;
   height:50px;
 }
+
 #rightnob{
   background-color:#fff;
   width:50px;
@@ -99,14 +107,4 @@ html {
   -moz-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
   -webkit-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
   -o-box-shadow: 0px 8px 5px rgba(0,0,0,0.6);
-}
-
-@media (max-width: 600px) {
-  #rightnob {
-    right: 10px;
-  }
-
-  #leftnob {
-    left: 10px;
-  }
 }
